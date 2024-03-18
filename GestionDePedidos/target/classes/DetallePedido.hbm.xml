@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.gestiondepedidos.model.detallepedido.DetallePedido" table="detallepedido" schema="gestorpedidos">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="id_pedido">
+            <column name="id_pedido" sql-type="int(11)"/>
+        </property>
+        <property name="id_producto">
+            <column name="id_producto" sql-type="int(11)"/>
+        </property>
+        <property name="cantidad">
+            <column name="cantidad" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.example.gestiondepedidos.model.pedido.Pedido" table="pedido" schema="gestorpedidos">
+        <id name="id">
+            <column name="id" sql-type="int(11)"/>
+        </id>
+        <property name="cod_pedido">
+            <column name="cod_pedido" sql-type="varchar(7)"/>
+        </property>
+        <property name="order_date">
+            <column name="order_date" sql-type="date"/>
+        </property>
+        <property name="user_id">
+            <column name="user_id" sql-type="int(11)"/>
+        </property>
+        <property name="total">
+            <column name="total" sql-type="int(11)"/>
+        </property>
+    </class>
+</hibernate-mapping>

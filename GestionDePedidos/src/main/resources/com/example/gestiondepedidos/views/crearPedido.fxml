@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="422.0" prefWidth="594.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestiondepedidos.controllers.CrearPedidoController">
+   <center>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="24.0" prefWidth="77.0" text="Fecha Pedido">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="Codigo de Pedido" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="10.0" />
+               </GridPane.margin>
+            </Label>
+            <DatePicker fx:id="dpFechaPedido" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </DatePicker>
+            <TextField fx:id="lbCodigoPedido" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="150.0" />
+               </GridPane.margin>
+            </TextField>
+         </children>
+      </GridPane>
+   </center>
+   <top>
+      <Label text="Creación de Pedido" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <GridPane BorderPane.alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.00000762939453" minWidth="10.0" prefWidth="146.00000762939453" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="140.00001220703123" minWidth="10.0" prefWidth="140.00001220703123" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="204.8" minWidth="10.0" prefWidth="169.59998779296876" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.20001220703125" minWidth="10.0" prefWidth="61.39996337890625" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Ordenador Portatil" />
+            <Label text="PC escritorio" GridPane.rowIndex="1" />
+            <Label text="Teclado Mecánico" GridPane.rowIndex="2" />
+            <Label text="Raton Gaming" GridPane.rowIndex="3" />
+            <Label text="Monitor 27" GridPane.rowIndex="4" />
+            <Label text="Disco Duro SSD 1TB" GridPane.columnIndex="2" />
+            <Label text="Impresora Multifunción" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <Label text="Router WiFi AC" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <Label text="Auriculares Inalámbricos" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <Label text="Cámara Web HD" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <Spinner fx:id="spProd1" GridPane.columnIndex="1" />
+            <Spinner fx:id="spProd2" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Spinner fx:id="spProd3" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Spinner fx:id="spProd4" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Spinner fx:id="spProd5" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Spinner fx:id="spProd6" GridPane.columnIndex="3" />
+            <Spinner fx:id="spProd7" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Spinner fx:id="spProd8" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+            <Spinner fx:id="spProd9" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+            <Spinner fx:id="spProd10" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+            <Button fx:id="btnAgregar" mnemonicParsing="false" onAction="#agregar" text="Añadir" GridPane.columnIndex="2" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="70.0" />
+               </GridPane.margin>
+            </Button>
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelar" prefHeight="26.0" prefWidth="82.0" text="Cancelar" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </bottom>
+</BorderPane>
